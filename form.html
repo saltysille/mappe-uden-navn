@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form netlify>
+      <label>
+        Rigtig navn:
+        <input type="text" name="realname" />
+      </label>
+      <label>
+        Hvor er du fra?
+        <select name="orgin">
+          <option>Mars</option>
+          <option>Mars</option>
+          <option>Mars</option>
+          <option>Mars</option>
+          <option>Mars</option>
+          <option>Mars</option>
+        </select>
+      </label>
+      <label>
+        God
+        <input type="radio" value="true" name="isEvil" />
+      </label>
+      <label>
+        Ond
+        <input type="radio" value="false" name="isEvil" />
+      </label>
+      <label>
+        Superkræfter (en per linje)
+        <textarea name="powers" cols="10" rows="10"></textarea>
+      </label>
+      <button>Send</button>
+    </form>
+
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      form * {
+        display: block;
+      }
+      input {
+        padding: 10px;
+      }
+    </style>
+  </body>
+</html>

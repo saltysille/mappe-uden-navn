@@ -1,6 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -16,8 +14,6 @@ body {
   max-width: 1800px;
   margin: 0 auto;
   font-family: Helvetica, sans-serif;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 p {
@@ -46,14 +42,16 @@ header {
 }
 
 .logo {
-  width: 35%;
+  width: 30%;
   height: auto;
   display: block;
+  padding-left: 20px;
 }
 
 nav {
   display: flex;
   align-items: center;
+  padding-right: 20px;
 }
 
 .menu {
@@ -81,7 +79,7 @@ nav {
 }
 
 .menu a:hover {
-  color: rgba(199, 153, 33, 1);
+  color: #dab24f;
 }
 
 .burger {
@@ -102,12 +100,17 @@ nav {
 }
 
 @media screen and (max-width: 800px) {
+  .logo {
+    width: 55%;
+    padding-left: 10px;
+  }
   .menu {
     display: none;
   }
 
   .burger {
     display: block;
+    padding-left: 10px;
   }
 
   .burger.active .line:nth-child(1) {
