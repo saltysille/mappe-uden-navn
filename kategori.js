@@ -1,6 +1,6 @@
 /// https://szmeszolzqvldfshrvhu.supabase.co
 
-fetch("https://szmeszolzqvldfshrvhu.supabase.co")
+fetch("https://szmeszolzqvldfshrvhu.supabase.co/rest/v1/vildmad")
   .then((res) => res.json())
   .then(showCategories);
 
@@ -14,8 +14,8 @@ function showCategory(cat) {
   //cloner
   const clone = template.cloneNode(true);
   //ændre indhold
-  clone.querySelector("a").textContent = cat.category;
-  clone.querySelector("a").href = `index.html?category=${cat.category}`;
+  clone.querySelector("img").illustrations = cat.category;
+  clone.querySelector("img").href = `index.html?category=${cat.category}`;
   //appender
   document.querySelector(".letterGroup ol").appendChild(clone);
 }
