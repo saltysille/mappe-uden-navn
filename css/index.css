@@ -29,6 +29,11 @@ a {
   font-family: Helvetica, sans-serif;
 }
 
+main {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
 /* Navbar */
 
 header {
@@ -42,7 +47,7 @@ header {
 }
 
 .logo {
-  width: 30%;
+  width: 37%;
   height: auto;
   display: block;
   padding-left: 20px;
@@ -191,6 +196,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 100px;
+  gap: 100px;
 }
 
 section {
