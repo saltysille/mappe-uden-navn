@@ -187,6 +187,16 @@ nav {
 
 /* Grids */
 
+.flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ebdfd0;
+  width: 40%;
+  height: 65%;
+}
+
 .box-4 {
   grid-column-start: 1;
   grid-column-end: 1;
@@ -199,17 +209,32 @@ nav {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 1;
+  border-radius: 50%;
+  background-color: #ebdfd0;
+  width: 40%;
+  height: 65%;
+}
+
+.box-4-2 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  border-radius: 50%;
+  background-color: #ebdfd0;
+  width: 40%;
+  height: 65%;
 }
 
 @media screen and (min-width: 768px) {
   .wrapper3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-    margin-left: 10rem;
+
+    /* margin-left: 10rem;
     margin-right: 10rem;
     margin-top: 4rem;
-    margin-bottom: 4rem;
-    z-index: -100;
+    margin-bottom */
+    /* :4rem ; */
   }
 }
