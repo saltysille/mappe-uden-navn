@@ -29,17 +29,32 @@ a {
   font-family: Helvetica, sans-serif;
 }
 
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Helvetica, sans-serif;
+  color: #2b465e;
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
 main {
-  margin-top: 200px;
   margin-bottom: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+    margin-top: 7rem;
+  }
 }
 
 /* Navbar */
 
 header {
-  display: flex;
+  /*  display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
   /* padding: 20px; */
   background-color: #faf2e8;
   font-family: Helvetica, sans-serif;
@@ -47,18 +62,33 @@ header {
   margin-top: 1rem;
 }
 
-.logo {
+/* .logo {
   width: 27%;
   height: auto;
   display: block;
   padding-left: 20px;
   justify-content: center;
+} */
+
+.logo_2 {
+  width: 80%;
+  height: auto;
+  display: block;
+  padding-left: 20px;
+  justify-content: center;
+  margin-right: 0;
 }
 
-nav {
+/* nav {
   display: flex;
   align-items: center;
   padding-right: 20px;
+} */
+
+.centered-content {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 .menu {
@@ -84,6 +114,9 @@ nav {
   transition: color 0.3s;
   font-size: 16px;
   text-transform: uppercase;
+  font-family: Helvetica, sans-serif;
+  font-weight: 600;
+  margin-top: 4rem;
 }
 
 .menu a:hover {
@@ -197,9 +230,7 @@ nav {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 100px;
-  gap: 100px;
+  justify-content: center;
 }
 
 section {
@@ -223,11 +254,25 @@ section {
   background-color: #ebdfd0;
   aspect-ratio: 1/1;
   width: 100%;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 100px;
+    gap: 100px;
+  }
+
+  .circle {
+    margin-top: 0;
+  }
 }
 
 /* Line */
 
 .separator {
-  border-top: 1.5px solid #2b465e; /* Adjust the style as needed */
-  margin: 20px 0; /* Adjust the spacing as needed */
+  width: 100vw;
+  border-top: 25px solid #2b465e;
+  margin: 20px 0;
 }
