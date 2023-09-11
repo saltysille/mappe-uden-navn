@@ -2,11 +2,11 @@ const urlParams = new URLSearchParams(window.location.search);
 const category = urlParams.get("category");
 
 if (category) {
-  fetch("https://kea-alt-del.dk/t7/api/products?category=" + category)
+  fetch("https://szmeszolzqvldfshrvhu.supabase.co/rest/v1/vildmad?select=categories/0/name" + category)
     .then((response) => response.json())
     .then(showProducts);
 } else {
-  fetch("https://kea-alt-del.dk/t7/api/products")
+  fetch("https://szmeszolzqvldfshrvhu.supabase.co/rest/v1/vildmad")
     .then((response) => response.json())
     .then(showProducts);
 }
@@ -16,24 +16,11 @@ function showProducts(products) {
 }
 
 function showProduct(product) {
-  const template = document.querySelector("#smallProductTemplate").content;
+  const template = document.querySelector("#stiTemplate").content;
   const copy = template.cloneNode(true);
-  //ændre indhold
-  copy.querySelector("h3").textContent = product.productdisplayname;
-  if (product.soldout) {
-    //produktet udsolgt
-    copy.querySelector("article img").classList.add("soldOut");
-  }
 
-  if (product.discount) {
-    //produktet rabat
-    copy.querySelector("p span").classList.add("rabat");
-  }
+  copy.querySelector("img").src = `https://marieelfrida.com/kea/assets/${product.id}.svg`;
 
-  copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
-  copy.querySelector("p span").textContent = product.price;
-  copy.querySelector("p.brandname").textContent = product.brandname;
-
-  copy.querySelector(".read-more").setAttribute("href", `produkt.html?id=${product.id}`);
+  copy.querySelector(".read-more").setAttribute("href", `info.html?id=${product.id}`);
   document.querySelector("main").appendChild(copy);
 }
