@@ -144,3 +144,72 @@ nav {
     font-size: 16px;
   }
 }
+
+/* Paragraph */
+
+.p_menu_small {
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+/* Images */
+
+.img_menu {
+  position: relative;
+  align-self: stretch;
+  width: 80%;
+  display: block;
+  margin: 2rem auto;
+  margin-top: 5rem;
+  z-index: -10; /* Lower z-index for img_menu */
+}
+
+.img_planter {
+  aspect-ratio: 3/4;
+  align-self: stretch;
+  display: block;
+  margin: -2rem auto; /* Use a negative margin to overlap img_menu */
+  margin-top: 3rem; /* Adjust the top margin to control the overlap */
+  z-index: 2; /* Higher z-index for img_planter to place it on top */
+}
+
+@media screen and (min-width: 768px) {
+  .img_menu_1 {
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .img_menu {
+    margin-top: 0;
+  }
+}
+
+/* Grids */
+
+.box-4 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.box-4-1 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    z-index: -100;
+  }
+}
