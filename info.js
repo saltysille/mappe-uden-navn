@@ -1,7 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 
-fetch("https://kea-alt-del.dk/t7/api/products/" + id)
+fetch("https://szmeszolzqvldfshrvhu.supabase.co/rest/v1/vildmad" + id)
   .then((respnse) => respnse.json())
   .then((data) => showProduct(data));
 
