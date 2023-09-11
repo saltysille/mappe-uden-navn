@@ -11,16 +11,18 @@ fetch("https://szmeszolzqvldfshrvhu.supabase.co/rest/v1/vildmad", {
   .then(showCategories);
 
 function showCategories(cats) {
+  console.log(cats);
   cats.forEach(showCategory);
 }
 
 function showCategory(cat) {
+  console.log(cat);
   //fanger
   const template = document.querySelector("template").content;
   //cloner
   const clone = template.cloneNode(true);
   //ændre indhold
-  clone.querySelector("img").illustrations = cat.category;
+  clone.querySelector("img").src = cat.illustrations;
   clone.querySelector("img").href = `index.html?category=${cat.category}`;
   //appender
   document.querySelector(".letterGroup ol").appendChild(clone);
