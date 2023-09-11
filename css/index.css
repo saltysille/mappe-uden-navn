@@ -187,17 +187,36 @@ nav {
 
 /* Grids */
 
-.flexbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: #ebdfd0;
-  width: 40%;
-  height: 65%;
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 100px;
 }
 
-.box-4 {
+section {
+  display: inline-grid;
+  max-width: 50vw;
+}
+.img_forside {
+  object-fit: cover;
+  width: 73%;
+  align-self: center;
+  justify-self: center;
+}
+
+.circle,
+.img_forside {
+  grid-area: 1/1;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: #ebdfd0;
+  aspect-ratio: 1/1;
+  width: 100%;
+}
+
+./* box-4 {
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 1;
@@ -224,12 +243,12 @@ nav {
   background-color: #ebdfd0;
   width: 40%;
   height: 65%;
-}
+} */
 
 @media screen and (min-width: 768px) {
   .wrapper3 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
 
     /* margin-left: 10rem;
     margin-right: 10rem;
