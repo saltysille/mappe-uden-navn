@@ -9,16 +9,10 @@ img {
 }
 
 #background-list {
-  width: 1200px; /* Adjust the width as needed */
-  height: 1000px; /* Half of the desired circle's diameter */
-  background-color: #ebdfd0; /* Change the background color to your preference */
-  border-top-left-radius: 100px; /* Half of the width for the top-left corner */
-  border-top-right-radius: 100px;
-  background-position: center;
-  /* border-radius: 50%;
+  border-radius: 50%;
   background-color: #ebdfd0;
-  aspect-ratio: 1/2.4;
-  width: 100%; */
+  aspect-ratio: 1/1.1;
+  width: 100%;
   margin-top: 10rem;
   margin-left: 3rem;
   background-position: center center;
