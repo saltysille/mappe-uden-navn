@@ -7,9 +7,9 @@ fetch("https://szmeszolzqvldfshrvhu.supabase.co/rest/v1/vildmad" + id)
 
 function showProduct(product) {
   console.log(product);
-  document.querySelector(".purchaseBox h3").textContent = product.productdisplayname;
-  document.querySelector(".purchaseBox .brand").textContent = product.brandname;
+  document.querySelector(".description h3").textContent = product.title;
+  document.querySelector(".description .").textContent = product.brandname;
   document.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
-  document.querySelector("p span").textContent = product.price;
+  document.querySelector("").textContent = product.price;
   document.querySelector(".description").textContent = product.description;
 }

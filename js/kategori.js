@@ -12,7 +12,7 @@ imageElements.forEach((img) => {
     let category = "";
 
     // Redirect to "liste.html" and pass the alt text and category as query parameters
-    window.location.href = `liste.html?category=${img.category}`;
+    window.location.href = `liste.html?category=${category}`;
 
     document.querySelector(".wrapper img").appendChild(clone);
   });
