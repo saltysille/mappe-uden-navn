@@ -9,7 +9,7 @@ function showProduct(product) {
   console.log(product);
   document.querySelector(".description h3").textContent = product.title;
   document.querySelector(".description .").textContent = product.brandname;
-  document.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
-  document.querySelector("").textContent = product.price;
+  document.querySelector("img").src = ` https://marieelfrida.com/kea/assets/${product.id}.svg`;
+  document.querySelector("").textContent = product.sankelandskaber / 0 / title;
   document.querySelector(".description").textContent = product.description;
 }
