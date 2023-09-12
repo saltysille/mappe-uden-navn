@@ -1,72 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Liste</title>
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/liste.css" />
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liste</title>
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/liste.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="centered-content">
+      <div>
+        <a href="index.html">
+          <img class="logo_2" src="images/logo.svg" alt="logo" />
+        </a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="https://vildmad.dk/dk/om-vild-mad">Om os</a></li>
+          <li><a href="https://vildmad.dk/dk/presse">Kontakt</a></li>
+          <li><a href="https://vildmad.dk/dk/undervisning">Vildmad.dk</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="separator"></div>
+  <main>
+    <section>
+      <div id="background-list"></div>
+    </section>
     <template id="stiTemplate">
       <article>
-        <img src="" alt="illustration" />
+        <a href="info-side.html">
+          <img src="" alt="illustration" />
+        </a>
+
         <h3>displaynavn</h3>
-        <div>
-          <a class="read-more" href="info.html">Vis mere</a>
-        </div>
+
       </article>
     </template>
-    <header>
-      <div class="centered-content">
-        <div>
-          <a href="index.html">
-            <img class="logo_2" src="images/logo.svg" alt="logo" />
-          </a>
-        </div>
-        <nav>
-          <ul class="menu">
-            <li><a href="https://vildmad.dk/dk/om-vild-mad">Om os</a></li>
-            <li><a href="https://vildmad.dk/dk/presse">Kontakt</a></li>
-            <li><a href="https://vildmad.dk/dk/undervisning">Vildmad.dk</a></li>
-          </ul>
-          <div class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <div class="separator"></div>
-    <main>
-      <section>
-        <div id="background-list"></div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer">
-        <div class="img_footer">
-          <div class="image image1">
-            <a href="https://www.instagram.com/vildmaddk/"
-              ><img src="images/instagram.svg" alt="Image 1"
-            /></a>
-          </div>
-        </div>
-        <div class="img_footer">
-          <div class="image image2">
-            <img src="images/footer_midt.svg" alt="Image 2" />
-          </div>
-        </div>
-        <div class="img_footer">
-          <div class="image image3">
-            <img src="images/footer_right.svg" alt="Image 3" />
-          </div>
+
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="img_footer">
+        <div class="image image1">
+          <a href="https://www.instagram.com/vildmaddk/"><img src="images/instagram.svg" alt="Image 1" /></a>
         </div>
       </div>
-    </footer>
-    <script src="/js/burger.js"></script>
-    <script src="js/liste.js"></script>
-  </body>
+      <div class="img_footer">
+        <div class="image image2">
+          <img src="images/footer_midt.svg" alt="Image 2" />
+        </div>
+      </div>
+      <div class="img_footer">
+        <div class="image image3">
+          <img src="images/footer_right.svg" alt="Image 3" />
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/burger.js"></script>
+  <script src="js/liste.js"></script>
+</body>
+
 </html>

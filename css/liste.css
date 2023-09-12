@@ -25,6 +25,10 @@ img {
   background-position: center;
   width: 100%;  */
 }
+
+img {
+  width: 10%;
+}
 /* General */
 body {
   background-color: #faf2e8;

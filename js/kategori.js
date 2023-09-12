@@ -17,14 +17,18 @@ imageElements.forEach((img) => {
     document.querySelector(".wrapper img").appendChild(clone);
   });
 });
-fetch("https://szmeszolzqvldfshrvhu.supabase.co/rest/v1/vildmad/categories/0/name", {
-  method: "GET",
-  headers: {
-    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN6bWVzem9senF2bGRmc2hydmh1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTQwNjkwODYsImV4cCI6MjAwOTY0NTA4Nn0.vdZbIwkvBjROsOeXxYGz-XwqyTfAlc40OxFSu8OAjaQ",
-  },
-})
-  .then((res) => res.json())
-  .then(showCategories);
+
+const url = "https://szmeszolzqvldfshrvhu.supabase.co";
+const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN6bWVzem9senF2bGRmc2hydmh1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTQwNjkwODYsImV4cCI6MjAwOTY0NTA4Nn0.vdZbIwkvBjROsOeXxYGz-XwqyTfAlc40OxFSu8OAjaQ",
+  fetch = (url + "/rest/v1/vildmad?select=id",
+  {
+    method: "GET",
+    headers: {
+      apikey: key,
+    },
+  })
+    .then((res) => res.json())
+    .then(showCategories);
 
 function showCategories(cats) {
   console.log(cats);
