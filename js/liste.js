@@ -32,7 +32,7 @@ function visMad(mad) {
     // Replace these with actual property names from your data
     copy.querySelector("img").src = item.illustrations;
     copy.querySelector("h3").textContent = item.title;
-
+    copy.querySelector("img").setAttribute("href", `info-side.html?id=${item.id}`);
     document.querySelector("main").appendChild(copy);
   });
 }
