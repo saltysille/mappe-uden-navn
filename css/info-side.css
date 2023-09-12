@@ -8,10 +8,22 @@ img {
   display: block;
 }
 #background-info {
-  background-size: cover; /* Adjust to your preference */
-  background-repeat: no-repeat;
   background-image: url("/images/background-info.svg");
-  background-color: black;
+  background-size: cover; /* Adjust this property to control how the image is sized */
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* Optionally, you can set a background color in case the image doesn't load or cover the entire section */
+  /* Set the height of the section to ensure the background image is visible */
+  width: 1705px;
+  height: 887px;
+  scale: 70%;
+  margin-left: -90px;
+}
+
+#vidste-du {
+  background-color: #873938;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 /* General */
 body {
@@ -25,7 +37,6 @@ p {
   color: black;
   font-family: Helvetica, sans-serif;
   margin-top: 20px;
-  letter-spacing: 0.1rem;
 }
 
 a {
