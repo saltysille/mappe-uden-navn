@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+#background-info {
+  background-image: url("/images/background-info.svg");
+  background-size: cover; /* Adjust this property to control how the image is sized */
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* Optionally, you can set a background color in case the image doesn't load or cover the entire section */
+  /* Set the height of the section to ensure the background image is visible */
+  width: 1705px;
+  height: 887px;
+  scale: 70%;
+  margin-left: -90px;
+}
+
+#vidste-du {
+  background-color: #873938;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+/* General */
+body {
+  background-color: #faf2e8;
+  max-width: 1800px;
+  margin: 0 auto;
+  font-family: Helvetica, sans-serif;
+}
+
+p {
+  color: black;
+  font-family: Helvetica, sans-serif;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-family: Helvetica, sans-serif;
+}
+
+/* Navbar */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #faf2e8;
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 1px;
+}
+
+.logo {
+  width: 30%;
+  height: auto;
+  display: block;
+  padding-left: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 16px;
+}
+
+.menu a:hover {
+  color: #dab24f;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  margin-bottom: 5px;
+}
+
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    width: 55%;
+    padding-left: 10px;
+  }
+  .menu {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    padding-left: 10px;
+  }
+
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #faf2e8;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 16px;
+  }
+}
