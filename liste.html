@@ -6,12 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>produkt</title>
 
-  <link rel="stylesheet" href="css/productlist.css" />
+
   <link rel="stylesheet" href="css/footer.css" />
   <link rel="stylesheet" href="css/liste.css" />
 </head>
 
 <body>
+  <template id="stiTemplate">
+    <article>
+      <img src="" alt="illustration">
+      <h3>displaynavn</h3>
+      <div>
+        <a class="read-more" href="info.html">Vis mere</a>
+      </div>
+    </article>
+  </template>
   <header>
     <div class="logo">
       <a href="index.html">
@@ -32,21 +41,19 @@
     </nav>
   </header>
   <main>
-    <template id="stiTemplate">
-      <article>
-        <img src="" alt="illustration">
-        <h3>displaynavn</h3>
-        <div>
-          <a class="read-more" href="info.html">Vis mere</a>
-        </div>
-      </article>
-    </template>
+
+    <section>
+
+      <div id="background-list">
+
+      </div>
+    </section>
   </main>
   <footer>
     <div id="footer-background"></div>
   </footer>
-  <script src="burger.js"></script>
-  <script src="liste.js"></script>
+  <script src="/js/burger.js"></script>
+  <script src="js/liste.js"></script>
 </body>
 
 </html>

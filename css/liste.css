@@ -7,7 +7,16 @@ img {
   height: auto;
   display: block;
 }
-
+#background-list {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 0;
+  left: 0;
+  background-image: url("/images/background-list.svg");
+  background-size: cover;
+}
 /* General */
 body {
   background-color: #faf2e8;
