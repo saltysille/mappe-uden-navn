@@ -9,13 +9,22 @@ img {
 }
 
 #background-list {
-  border-radius: 50%;
+  border-radius: 50% 50% 0 0; /* Set border-radius to create a half-circle */
+  background-color: #ebdfd0;
+  aspect-ratio: 1/1.1;
+  width: 100%;
+  margin-top: 10rem;
+
+  background-position: center center;
+  background-size: cover; /* Ensure the background covers the container */
+
+  /*   border-radius: 80%;
   background-color: #ebdfd0;
   aspect-ratio: 1/1.1;
   width: 100%;
   margin-top: 10rem;
   margin-left: 3rem;
-  background-position: center center;
+  background-position: center center; */
 
   /* display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -26,8 +35,12 @@ img {
   width: 100%;  */
 }
 
-img {
+.image-illustration {
   width: 10%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  z-index: 1;
 }
 /* General */
 body {
@@ -77,45 +90,30 @@ main {
 /* Navbar */
 
 header {
-  /*  display: flex;
+  display: flex;
   justify-content: space-between;
-  align-items: center; */
-  /* padding: 20px; */
+  align-items: center;
+  padding: 20px;
   background-color: #faf2e8;
   font-family: Helvetica, sans-serif;
-  letter-spacing: 1px;
-  margin-top: 1rem;
 }
-
-/* .logo {
-  width: 27%;
-  height: auto;
-  display: block;
-  padding-left: 20px;
-  justify-content: center;
-} */
 
 .logo_2 {
-  width: 80%;
+  width: 85%;
   height: auto;
   display: block;
   padding-left: 20px;
-  justify-content: center;
   margin-right: 0;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
-/* nav {
+nav {
   display: flex;
   align-items: center;
   padding-right: 20px;
-} */
+}
 
 .centered-content {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
 }
 
 .menu {
@@ -134,7 +132,6 @@ header {
 }
 
 .menu a {
-  display: block;
   padding: 10px;
   color: #2b465e;
   text-decoration: none;
@@ -211,11 +208,10 @@ header {
     font-size: 16px;
   }
 }
-
 /* Line */
 
 .separator {
   width: 100vw;
-  border-top: 25px solid #2b465e;
+  border-top: 5px solid #2b465e;
   /*  margin: 20px 0; */
 }

@@ -17,6 +17,7 @@
 
 .image {
   grid-area: 1/1;
+  width: 100%;
 }
 
 .image1,
@@ -45,26 +46,26 @@
 
 @media screen and (min-width: 768px) {
   .footer {
-    height: 400px;
+    height: 300px;
   }
 
   .image1 {
     margin-top: 6rem;
     margin-left: 0;
     margin-right: 6rem;
-    width: 40%;
+    width: 30%;
   }
 
   .image2 {
     margin-top: 2rem;
-    width: 50%;
+    width: 55%;
     margin-left: 0;
   }
 
   .image3 {
     margin-top: 6rem;
-    margin-left: 14rem;
-    width: 35%;
+    margin-left: 5rem;
+    width: 30%;
   }
 }
 
