@@ -219,3 +219,10 @@ header {
   border-top: 25px solid #2b465e;
   /*  margin: 20px 0; */
 }
+
+/* Grids */
+
+.wrapper {
+  display: grid;
+  justify-content: center;
+}
