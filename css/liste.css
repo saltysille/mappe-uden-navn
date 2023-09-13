@@ -8,15 +8,15 @@ img {
   display: block;
 }
 
-#background-list {
-  border-radius: 50% 50% 0 0; /* Set border-radius to create a half-circle */
-  background-color: #ebdfd0;
+/* #background-list { */
+/*   border-radius: 50% 50% 0 0; /* Set border-radius to create a half-circle */
+/*   background-color: #ebdfd0;
   aspect-ratio: 1/1.1;
   width: 100%;
   margin-top: 10rem;
 
   background-position: center center;
-  background-size: cover; /* Ensure the background covers the container */
+  background-size: cover; 
 
   /*   border-radius: 80%;
   background-color: #ebdfd0;
@@ -26,22 +26,23 @@ img {
   margin-left: 3rem;
   background-position: center center; */
 
-  /* display: grid;
+/* display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-size: cover; /* Adjust to your preference */
-  /* background-repeat: no-repeat;
+/* background-repeat: no-repeat;
   background-image: url("/images/backgound-list-blue.svg");
   background-position: center;
   width: 100%;  */
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 30%;
 }
 
-.image-illustration {
-  width: 10%;
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  z-index: 1;
-}
 /* General */
 body {
   background-color: #faf2e8;
