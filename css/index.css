@@ -64,14 +64,12 @@ main {
 /* Navbar */
 
 header {
-  /*  display: flex;
+  display: flex;
   justify-content: space-between;
-  align-items: center; */
-  /* padding: 20px; */
+  align-items: center;
+  padding: 20px;
   background-color: #faf2e8;
   font-family: Helvetica, sans-serif;
-  letter-spacing: 1px;
-  margin-top: 1rem;
 }
 
 /* .logo {
@@ -83,26 +81,21 @@ header {
 } */
 
 .logo_2 {
-  width: 80%;
+  width: 85%;
   height: auto;
   display: block;
   padding-left: 20px;
-  justify-content: center;
   margin-right: 0;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
-/* nav {
+nav {
   display: flex;
   align-items: center;
   padding-right: 20px;
-} */
+}
 
 .centered-content {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
 }
 
 .menu {
@@ -121,7 +114,6 @@ header {
 }
 
 .menu a {
-  display: block;
   padding: 10px;
   color: #2b465e;
   text-decoration: none;
@@ -198,7 +190,13 @@ header {
     font-size: 16px;
   }
 }
+/* Line */
 
+.separator {
+  width: 100vw;
+  border-top: 5px solid #2b465e;
+  /*  margin: 20px 0; */
+}
 /* Paragraph */
 
 .p_menu_small {
@@ -280,12 +278,4 @@ section {
   .circle {
     margin-top: 0;
   }
-}
-
-/* Line */
-
-.separator {
-  width: 100vw;
-  border-top: 25px solid #2b465e;
-  /*  margin: 20px 0; */
 }
