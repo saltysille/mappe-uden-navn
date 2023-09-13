@@ -1,4 +1,4 @@
-// Get the query parameters from the URL
+// her henter vi dataen - og vælger at hente kategorierne
 const urlParams = new URLSearchParams(window.location.search);
 const category = urlParams.get("kategori");
 const url = "https://szmeszolzqvldfshrvhu.supabase.co/rest/v1/vildmad?kategori=eq.";
@@ -21,15 +21,10 @@ if (category) {
 
 function visMad(mad) {
   console.log(mad);
-  // mad.forEach((elm) => {
-  //   console.log(elm);
-  // });
-  // Assuming mad is an array of objects
   mad.forEach((item) => {
     const template = document.querySelector("#stiTemplate").content;
     const copy = template.cloneNode(true);
-
-    // Replace these with actual property names from your data
+    //ændre indhold
     copy.querySelector("img").src = item.illustrations;
     copy.querySelector("h3").textContent = item.title;
     copy.querySelector("a").setAttribute("href", `info-side.html?id=${item.id}`);
