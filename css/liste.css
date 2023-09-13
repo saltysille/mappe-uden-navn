@@ -34,13 +34,53 @@ img {
   background-position: center;
   width: 100%;  */
 
-main {
+/* main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
   margin: 0 auto;
   padding: 20px;
   width: 30%;
+} */
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url("/images/background-list.svg"); /* Replace with your background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #faf2e8;
+  max-width: 1800px;
+  font-family: Helvetica, sans-serif; /* Use a suitable font family */
+}
+
+/* Style the main container */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 180vh; /* Adjust to center content vertically */
+}
+
+/* Create a 1-1 grid layout for the articles */
+.grid-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px; /* Adjust the gap between items */
+  padding: 20px;
+  text-align: left;
+}
+
+/* Style the link and heading within each grid item */
+.grid-item a {
+  text-decoration: none;
+  color: #333; /* Link text color */
+}
+
+.grid-item h3 {
+  margin: 0;
 }
 
 /* General */
