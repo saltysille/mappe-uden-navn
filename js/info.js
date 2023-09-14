@@ -22,7 +22,8 @@ fetch(url, options)
 //visMad funktionen modtager dataen, og logger dataen i konsollen
 function visMad(item) {
   console.log(item);
+  const data = item[0];
   //ændre indhold
-  document.querySelector(".background-info h3").textContent = item.title;
-  document.querySelector(".img-info").src = item.illustrations;
+  document.querySelector("h3").textContent = data.title;
+  document.querySelector(".img_info").src = data.illustrations;
 }
