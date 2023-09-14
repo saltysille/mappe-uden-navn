@@ -48,6 +48,8 @@ body {
   margin-top: 500px;
   background-color: #faf2e8;
   max-width: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
   font-family: Helvetica, sans-serif; /* Use a suitable font family */
 }
 @media screen and (min-width: 800px) {
@@ -55,9 +57,7 @@ body {
     padding: 0;
     margin: 0;
     background-image: url("/images/background-list.svg"); /* Replace with your background image */
-
     background-repeat: no-repeat;
-
     background-color: #faf2e8;
     max-width: 1800px;
     font-family: Helvetica, sans-serif; /* Use a suitable font family */
@@ -74,11 +74,13 @@ h3 {
 }
 
 main {
+  display: grid;
   width: 30%;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
 }
+
 @media screen and (min-width: 800px) {
   main {
     display: grid;
@@ -120,14 +122,18 @@ main {
 }
 
 .grid-item {
+  display: grid;
+  margin: auto 0;
   margin-top: 30px;
   padding: 10px;
   text-align: left;
-  border: 2px solid #000;
-  width: 200px;
-  border-radius: 15%;
-  align-self: center;
-  justify-self: center;
+  border: 5px solid #2b465e;
+  width: 250px;
+  border-radius: 40%;
+  box-shadow: 5px 5px 10px 0;
+  background-color: #fff8f8;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid-item a {
@@ -155,8 +161,7 @@ main {
     grid-gap: 10px;
     padding: 20px;
     text-align: left;
-    border: 2px solid #000;
-    border-radius: 15%;
+    width: 350px;
   }
 
   .grid-item a {
@@ -219,7 +224,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #faf2e8;
   font-family: Helvetica, sans-serif;
   margin: 0 auto;
   width: 50%;

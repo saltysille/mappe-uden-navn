@@ -7,6 +7,12 @@ img {
   height: auto;
   display: block;
 }
+
+.img_skov {
+  width: 125.6%;
+  height: auto;
+  display: block;
+}
 .background-info {
   background-image: url("/images/background-info.svg");
   background-size: cover; /* Adjust this property to control how the image is sized */
@@ -63,6 +69,7 @@ h3 {
   background-color: #ebdfd0;
   aspect-ratio: 1/1;
   width: 100%;
+  box-shadow: 5px 5px 10px 0;
 }
 @media screen and (min-width: 800px) {
   .vidste-du {
