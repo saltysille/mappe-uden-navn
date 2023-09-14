@@ -71,7 +71,12 @@ h3 {
   text-align: center;
 }
 
-/* Style the main container */
+main {
+  width: 30%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
 @media screen and (min-width: 800px) {
   main {
     display: grid;
@@ -88,10 +93,6 @@ h3 {
     grid-row: 1/-1;
   }
 }
-main {
-  width: 30%;
-  margin: 0 auto;
-}
 
 /* animation */
 @keyframes bounce {
@@ -106,38 +107,65 @@ main {
   }
 }
 
-/* Apply the animation to the img element */
 .image-illustration {
   animation: bounce 1s infinite;
-  padding-bottom: 40px;
-  padding-top: 40px;
-  height: 300px;
-  width: 300px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  height: 200px;
+  width: 200px;
   align-self: center;
   justify-self: center;
 }
 
-/* Create a 1-1 grid layout for the articles */
 .grid-item {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 10px; /* Adjust the gap between items */
-  padding: 20px;
+  margin-top: 30px;
+  padding: 10px;
   text-align: left;
   border: 2px solid #000;
+  width: 200px;
   border-radius: 15%;
+  align-self: center;
+  justify-self: center;
 }
 
-/* Style the link and heading within each grid item */
 .grid-item a {
   text-decoration: none;
-  color: #333; /* Link text color */
+  color: #333;
 }
 
 .grid-item h3 {
   margin: 0;
 }
+@media screen and (min-width: 800px) {
+  .image-illustration {
+    animation: bounce 1s infinite;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    height: 300px;
+    width: 300px;
+    align-self: center;
+    justify-self: center;
+  }
 
+  .grid-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 20px;
+    text-align: left;
+    border: 2px solid #000;
+    border-radius: 15%;
+  }
+
+  .grid-item a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .grid-item h3 {
+    margin: 0;
+  }
+}
 /* General */
 body {
   background-color: #faf2e8;
