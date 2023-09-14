@@ -16,6 +16,24 @@ img {
   margin-top: 0;
 }
 
+/* animation */
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2); /* Zoom in by 20% at the midpoint of the animation */
+  }
+  100% {
+    transform: scale(1); /* Zoom out completely at the end of the animation */
+  }
+}
+
+/* Apply the animation to the img element */
+.img_forside {
+  animation: bounce 1s infinite; /* Adjust the duration and iteration as needed */
+}
+
 /* General */
 body {
   background-color: #faf2e8;
