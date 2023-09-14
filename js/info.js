@@ -25,5 +25,6 @@ function visMad(item) {
   const data = item[0];
   //ændre indhold
   document.querySelector("h3").textContent = data.title;
+  document.querySelector("p").textContent = data.info;
   document.querySelector(".img_info").src = data.illustrations;
 }
